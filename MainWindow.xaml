@@ -19,6 +19,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+		
         
         <StackPanel Grid.Row="0">
             <Image Width="2000" Height="100"
