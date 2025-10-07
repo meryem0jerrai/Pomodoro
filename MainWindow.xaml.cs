@@ -19,18 +19,32 @@ namespace Pomodoro
 {
     ///<summary>
     ///Interaction logic for MainWindow.xaml
-    ///</summry>
+    ///</summary>
     public partial class MainWindow : Window
     {
+        DispatcherTimer timer = new DispatcherTimer();
         int n = 0; //champ de classe
         public MainWindow()
         {
             InitializeComponent();
-            DispatcherTimer timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(1);
-            lblTime.Content = "25:00";
-            timer.Tick += timer_Tick;
-            timer.Start();
+            lblTime.Content = "00:02";    
+        }
+        public void StartorStopTimer(object sender, RoutedEventArgs e)
+        {
+            if (toggle.IsChecked == false)
+            {
+                toggle.Content = "Start Work";
+                timer.Stop();
+                return;
+            }
+            else
+            {
+                toggle.Content = "Stop Work";
+                timer.Interval = TimeSpan.FromSeconds(1);
+                timer.Tick -= timer_Tick; // Retire l’association si elle existe déjà
+                timer.Tick += timer_Tick; // Ajoute l’association
+                timer.Start();
+            }
         }
 
         void timer_Tick(object? sender, EventArgs e)
@@ -46,13 +60,14 @@ namespace Pomodoro
                     lblTime.Content = "00:00";
                     MessageBox.Show("Time's up! Take a break.");
                     n++;
+                    lblTime.Content = "25:00";
+                    toggle.IsChecked = false;
+                    toggle.Content = "Start Work";
+                    StartorStopTimer(toggle, new RoutedEventArgs());
                     // Fin de la période de travail
                 }
-                return;
-                
-                  
+                return;  
             }
-
             if (seconds==0)
             {
                 if (minutes > 0)
@@ -66,10 +81,6 @@ namespace Pomodoro
                 seconds--;
             }
             lblTime.Content = $"{minutes:D2}:{seconds:D2}";
-
-        }
-
-        
+        } 
     }
-
 }
