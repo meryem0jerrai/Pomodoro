@@ -32,5 +32,9 @@
         <StackPanel Grid.Row="2">
 			<ToggleButton x:Name="toggle" Margin="10,20,10,0" Click="StartorStopTimer" Background="#FF7847A0">Start Work</ToggleButton>
         </StackPanel>
+
+		<StackPanel Grid.Row="3">
+			<Button x:Name="button" Margin="10,20,10,0" Click="ResetTimer" Background="#FF7847A0">Reset</Button>
+		</StackPanel>
     </Grid>
 </Window>

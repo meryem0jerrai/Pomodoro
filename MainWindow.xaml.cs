@@ -27,7 +27,7 @@ namespace Pomodoro
         public MainWindow()
         {
             InitializeComponent();
-            lblTime.Content = "00:02";    
+            lblTime.Content = "25:00";    
         }
         public void StartorStopTimer(object sender, RoutedEventArgs e)
         {
@@ -45,6 +45,15 @@ namespace Pomodoro
                 timer.Tick += timer_Tick; // Ajoute l’association
                 timer.Start();
             }
+        }
+
+        public void ResetTimer(object sender, RoutedEventArgs e)
+        {
+            timer.Stop();
+            lblTime.Content = "25:00";
+            toggle.IsChecked = false;
+            toggle.Content = "Start Work";
+            n = 0;
         }
 
         void timer_Tick(object? sender, EventArgs e)
