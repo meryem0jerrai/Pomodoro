@@ -24,11 +24,18 @@
             <Image Width="2000" Height="100"
             Source="C:\Users\merye\OneDrive\Bureau\Tomato.webp" /> 
         </StackPanel>
-
-        <StackPanel Grid.Row="1">
+		
+		<StackPanel Grid.Row="1">
+			<Label x:Name="lblTime" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+		</StackPanel>
+		
+        <!--<StackPanel Grid.Row="1">
             <TextBox x:Name="timerValue" />
             <ToggleButton x:Name="togglebtnAdd" Margin="10,20,10,0" Click="TogglePress" Background="#FF7847A0">On/Off</ToggleButton>
         </StackPanel>
+		-->
+		
+		
 
     </Grid>
 </Window>
