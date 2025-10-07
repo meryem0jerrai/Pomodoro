@@ -1,0 +1,34 @@
+﻿<Window x:Class="Pomodoro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pomodoro"
+        mc:Ignorable="d"
+        Title="My Pomodorro Timer" Height="250" Width="250" OpacityMask="Black" BorderBrush="#FFA54B4B">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF6D3E94" Offset="0.9"/>
+            <GradientStop Color="#FFB498CB" Offset="0.508"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0">
+            <Image Width="2000" Height="100"
+            Source="C:\Users\merye\OneDrive\Bureau\Tomato.webp" /> 
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <TextBox x:Name="timerValue" />
+            <ToggleButton x:Name="togglebtnAdd" Margin="10,20,10,0" Click="TogglePress" Background="#FF7847A0">On/Off</ToggleButton>
+        </StackPanel>
+
+    </Grid>
+</Window>

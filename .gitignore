@@ -1,0 +1,48 @@
+# Dossiers et fichiers Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Dossiers de build
+bin/
+obj/
+
+# Fichiers de logs et de débogage
+*.log
+*.pdb
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Fichiers de configuration locaux
+*.dbmdl
+*.local.json
+
+# Dossiers de packages NuGet
+packages/
+*.nupkg
+
+# Fichiers générés par le designer
+Generated_Code/
+
+# Dossiers de test
+TestResults/
+*.coverage
+*.coveragexml
+
+# Fichiers de publication
+publish/
+
+# Fichiers de cache
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+
+# Fichiers de sauvegarde
+*.bak
+
+# Dossiers de configuration pour Rider/JetBrains
+.idea/
