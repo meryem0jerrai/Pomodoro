@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pomodoro"
         mc:Ignorable="d"
-        Title="My Pomodorro Timer" Height="350" Width="350" OpacityMask="Black" BorderBrush="#FFA54B4B">
+        Title="My Pomodorro Timer" Height="250" Width="270" OpacityMask="Black" BorderBrush="#FFA54B4B">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF6D3E94" Offset="0.9"/>
@@ -14,7 +14,7 @@
     </Window.Background>
     <Grid Margin="10">
         <Grid.RowDefinitions>
-            <RowDefinition Height="100" />
+            <RowDefinition Height="50" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -22,20 +22,20 @@
 		
         
         <StackPanel Grid.Row="0">
-            <Image Width="2000" Height="100"
-            Source="C:\Users\merye\OneDrive\Bureau\Tomato.webp" /> 
+            <Image Width="100" Height="50"
+            Source="/images/tomato_free.jpg" /> 
         </StackPanel>
 		
 		<StackPanel Grid.Row="1">
-			<Label x:Name="lblTime" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+			<Label x:Name="lblTime" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"  />
 		</StackPanel>
 		
         <StackPanel Grid.Row="2">
-			<ToggleButton x:Name="toggle" Margin="15,20,15,0" Click="StartorStopTimer" Background="#FF7847A0">Start Work</ToggleButton>
+			<ToggleButton x:Name="toggle" Margin="80,20,80,0" Click="StartorStopTimer" Background="#FF7847A0">Start Work</ToggleButton>
         </StackPanel>
 
 		<StackPanel Grid.Row="3">
-			<Button x:Name="button" Margin="15,20,15,0" Click="ResetTimer" Background="#FF7847A0">Reset</Button>
+            <Button x:Name="button" Margin="80,0,80,0" Click="ResetTimer" Background="#FF7847A0">Reset</Button>
 		</StackPanel>
     </Grid>
 </Window>
