@@ -1,6 +1,16 @@
 This is an app to use the pomodoro timer technique. 
 
-This is my first time creating a desktop app, here's what I learned so far:
+To use it, please follow these simple steps:
+
+Clone the repository to your local machine using the command: git clone 
+Navigate to the project directory: cd repos/pomodoro
+Publish the project using the command: dotnet publish -c Release -r win-x64 --self-contained true
+Navigate to the publish directory: cd bin/Release/net9.0/win-x64/publish
+Run the application using the command: ./pomodoro.exe
+
+History of my learning -
+
+September 2025: This is my first time creating a desktop app, here's what I learned so far:
 
 1- Creating a windows interface using Windows Forms App (.NET Framework) in Visual Studio.
 
