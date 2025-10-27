@@ -8,7 +8,7 @@ To use it, please follow these simple steps:
 
 - Publish the project using the command: dotnet publish -c Release -r win-x64 --self-contained true
 
-- Navigate to the publish directory: cd bin\Release\net9.0\win-x64\publish
+- Navigate to the publish directory: cd bin\Release\net9.0-windows\win-x64\publish
 
 - Run the application using the command: .\pomodoro.exe
 
