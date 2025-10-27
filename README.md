@@ -14,7 +14,7 @@ To use it, please follow these simple steps:
 
 Well done, now you can use the pomodoro timer app on your desktop! If you're curious about how I built it, read on.
 
-History of my learning -
+History of my learning: 
 
 September 2025: This is my first time creating a desktop app, here's what I learned so far:
 
