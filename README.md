@@ -4,13 +4,13 @@ To use it, please follow these simple steps:
 
 - Clone the repository to your local machine using the command: git clone https://github.com/meryem0jerrai/Pomodoro
 
-- Navigate to the project directory: cd repos/pomodoro
+- Navigate to the project directory: cd Pomodoro\
 
 - Publish the project using the command: dotnet publish -c Release -r win-x64 --self-contained true
 
-- Navigate to the publish directory: cd bin/Release/net9.0/win-x64/publish
+- Navigate to the publish directory: cd bin\Release\net9.0\win-x64\publish
 
-- Run the application using the command: ./pomodoro.exe
+- Run the application using the command: .\pomodoro.exe
 
 Well done, now you can use the pomodoro timer app on your desktop! If you're curious about how I built it, read on.
 
