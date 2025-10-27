@@ -2,15 +2,15 @@ This is an app to use the pomodoro timer technique.
 
 To use it, please follow these simple steps:
 
-Clone the repository to your local machine using the command: git clone https://github.com/meryem0jerrai/Pomodoro
+- Clone the repository to your local machine using the command: git clone https://github.com/meryem0jerrai/Pomodoro
 
-Navigate to the project directory: cd repos/pomodoro
+- Navigate to the project directory: cd repos/pomodoro
 
-Publish the project using the command: dotnet publish -c Release -r win-x64 --self-contained true
+- Publish the project using the command: dotnet publish -c Release -r win-x64 --self-contained true
 
-Navigate to the publish directory: cd bin/Release/net9.0/win-x64/publish
+- Navigate to the publish directory: cd bin/Release/net9.0/win-x64/publish
 
-Run the application using the command: ./pomodoro.exe
+- Run the application using the command: ./pomodoro.exe
 
 History of my learning -
 
