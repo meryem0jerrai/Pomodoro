@@ -2,7 +2,7 @@ This is an app to use the pomodoro timer technique.
 
 To use it, please follow these simple steps:
 
-- Clone the repository to your local machine using the command: git clone https://github.com/meryem0jerrai/Pomodoro
+- Clone the repository to your local machine using the command: ```git clone https://github.com/meryem0jerrai/Pomodoro```
 
 - Navigate to the project directory: cd Pomodoro\
 
