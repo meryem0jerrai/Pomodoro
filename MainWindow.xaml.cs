@@ -39,7 +39,7 @@ namespace Pomodoro
             }
             else
             {
-                toggle.Content = "Stop Work";
+                toggle.Content = "Stop Work" ;
                 timer.Interval = TimeSpan.FromSeconds(1);
                 timer.Tick -= timer_Tick; // Retire l’association si elle existe déjà
                 timer.Tick += timer_Tick; // Ajoute l’association
@@ -67,7 +67,9 @@ namespace Pomodoro
                 if (n==0)
                 {
                     lblTime.Content = "00:00";
-                    MessageBox.Show("Time's up! Take a break.");
+                    Application.Current.MainWindow.Topmost = true; 
+                    MessageBox.Show(owner: Application.Current.MainWindow, "Time's up! Take a break.", "Notification");
+                    Application.Current.MainWindow.Topmost = false;
                     n++;
                     lblTime.Content = "25:00";
                     toggle.IsChecked = false;
@@ -75,6 +77,7 @@ namespace Pomodoro
                     StartorStopTimer(toggle, new RoutedEventArgs());
                     // Fin de la période de travail
                 }
+                n = 0;
                 return;  
             }
             if (seconds==0)
